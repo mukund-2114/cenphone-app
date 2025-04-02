@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Country Array -->
+    <string-array name="countries_array">
+        <item>Select</item>
+        <item>Canada</item>
+        <item>India</item>
+        <item>USA</item>
+
+    </string-array>
+
+    <!-- Canada Provinces Array -->
+    <string-array name="canada_provinces_array">
+        <item>Select</item>
+        <item>Ontario</item>
+        <item>Quebec</item>
+        <item>British Columbia</item>
+        <item>Alberta</item>
+        <item>Nova Scotia</item>
+    </string-array>
+
+    <!-- Canada Cities Array -->
+    <string-array name="canada_cities_array">
+        <item>Select</item>
+        <item>Toronto</item>
+        <item>Ottawa</item>
+        <item>Vancouver</item>
+        <item>Montreal</item>
+        <item>Calgary</item>
+        <item>Halifax</item>
+    </string-array>
+
+</resources>

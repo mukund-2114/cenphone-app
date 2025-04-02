@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Define the background color -->
+    <solid android:color="#FFFFFF" /> <!-- Set background color, or use transparent if you want it only as a border -->
+
+    <!-- Define the border color and width -->
+    <stroke
+        android:width="2dp"
+        android:color="#D3D3D3" /> <!-- Change color and width as needed -->
+
+    <!-- Define the corner radius -->
+    <corners android:radius="16dp" /> <!-- Adjust radius to control the curve level -->
+</shape>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">CenPhone</string>
+    <string name="welcome_message">Welcome to CenPhone</string>
+    <string name="order_now">Order Now</string>
+    <string name="select_brand">Select Brand</string>
+    <string name="checkout">Proceed to Checkout</string>
+    <string name="make_payment">Make Payment</string>
+    <string name="order_confirmed">Order Confirmed!</string>
+    <string name="cenphone_description">Shop the latest smartphones at CenPhone. Browse, customize, and enjoy fast delivery or store pick-up</string>
+    <string name="title_activity_delivery_type">DeliveryType</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Add more strings as needed for each screen -->
+</resources>
+
+

@@ -1,0 +1,31 @@
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryColor</item>
+        <item name="colorAccent">@color/accentColor</item>
+    </style>
+
+    <style name="ButtonStyle">
+        <item name="android:background">@drawable/rounded_button_background</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:layout_marginTop">24dp</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+
+        <!--        <item name="android:layout_marginLeft">@dimen/medium_margin</item>-->
+        <!--        <item name="android:layout_marginRight">@dimen/medium_margin</item>-->
+    </style>
+
+    <style name="TextStyle">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <!-- Add more styles as needed -->
+    <style name="MaterialCardTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your Material theme here if needed -->
+    </style>
+
+</resources>

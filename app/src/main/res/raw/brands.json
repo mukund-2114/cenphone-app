@@ -1,0 +1,122 @@
+{
+  "brands": [
+    {
+      "name": "iPhone",
+      "models": [
+        {
+          "model": "iPhone 14",
+          "base_price": 450.00,
+          "description": "The iPhone 14 brings you the best of Apple with powerful A15 Bionic chip and a stunning Super Retina XDR display.",
+          "image": "iphone_14.png",
+          "colors": ["Blue", "Red", "Black", "White"],
+          "storage_options": [
+            { "size": "64GB", "price": 450.00 },
+            { "size": "128GB", "price": 500.00 },
+            { "size": "256GB", "price": 550.00 }
+          ]
+        },
+        {
+          "model": "iPhone 15",
+          "base_price": 500.00,
+          "description": "Experience the new iPhone 15 with an advanced camera system, A16 chip, and improved battery life.",
+          "image": "iphone_15.png",
+          "colors": ["Gold", "Silver", "Black"],
+          "storage_options": [
+            { "size": "128GB", "price": 500.00 },
+            { "size": "256GB", "price": 550.00 },
+            { "size": "512GB", "price": 600.00 }
+          ]
+        },
+        {
+          "model": "iPhone SE",
+          "base_price": 400.00,
+          "description": "The iPhone SE packs powerful performance into a compact design, featuring the A13 Bionic chip and advanced camera.",
+          "image": "iphone_se.png",
+          "colors": ["Black", "White", "Red"],
+          "storage_options": [
+            { "size": "64GB", "price": 400.00 },
+            { "size": "128GB", "price": 450.00 },
+            { "size": "256GB", "price": 500.00 }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Samsung",
+      "models": [
+        {
+          "model": "Galaxy S21",
+          "base_price": 400.00,
+          "description": "The Samsung Galaxy S21 offers a dynamic AMOLED display, powerful Exynos processor, and triple-lens camera.",
+          "image": "galaxy_s21.png",
+          "colors": ["Gray", "White", "Pink"],
+          "storage_options": [
+            { "size": "128GB", "price": 400.00 },
+            { "size": "256GB", "price": 450.00 }
+          ]
+        },
+        {
+          "model": "Galaxy Note 20",
+          "base_price": 550.00,
+          "description": "A productivity powerhouse, the Galaxy Note 20 comes with an S Pen and a large Super AMOLED display.",
+          "image": "galaxy_note20.png",
+          "colors": ["Black", "Bronze"],
+          "storage_options": [
+            { "size": "256GB", "price": 550.00 },
+            { "size": "512GB", "price": 600.00 }
+          ]
+        },
+        {
+          "model": "Galaxy Z Flip",
+          "base_price": 700.00,
+          "description": "The Galaxy Z Flip combines innovation and style with its unique foldable design and flexible display.",
+          "image": "galaxy_z_flip.png",
+          "colors": ["Purple", "Black", "Gold"],
+          "storage_options": [
+            { "size": "128GB", "price": 700.00 },
+            { "size": "256GB", "price": 750.00 }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Google Pixel",
+      "models": [
+        {
+          "model": "Pixel 6",
+          "base_price": 350.00,
+          "description": "The Pixel 6 delivers a stunning camera experience, with Google's Tensor chip and a beautiful 90Hz display.",
+          "image": "pixel_6.png",
+          "colors": ["Black", "White"],
+          "storage_options": [
+            { "size": "128GB", "price": 350.00 },
+            { "size": "256GB", "price": 400.00 }
+          ]
+        },
+        {
+          "model": "Pixel 7",
+          "base_price": 450.00,
+          "description": "Discover the Pixel 7 with enhanced AI features, improved battery life, and an ultra-smooth 120Hz display.",
+          "image": "pixel_7.png",
+          "colors": ["Green", "Black"],
+          "storage_options": [
+            { "size": "128GB", "price": 450.00 },
+            { "size": "256GB", "price": 500.00 }
+          ]
+        },
+        {
+          "model": "Pixel 7 Pro",
+          "base_price": 600.00,
+          "description": "Pixel 7 Pro is Google's flagship phone, featuring a triple camera system, stunning 6.7-inch display, and premium build.",
+          "image": "pixel_7_pro.png",
+          "colors": ["Gray", "Black", "White"],
+          "storage_options": [
+            { "size": "128GB", "price": 600.00 },
+            { "size": "256GB", "price": 650.00 },
+            { "size": "512GB", "price": 700.00 }
+          ]
+        }
+      ]
+    }
+  ]
+}

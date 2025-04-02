@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/medium_margin"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!-- Back Button -->
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/back_arrow" />
+
+        <!-- Profile Title -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="My Profile"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Cart Icon -->
+
+    </LinearLayout>
+
+
+    <!-- Profile Icon -->
+    <ImageView
+        android:id="@+id/profileIcon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/profile_icon"
+        android:contentDescription="Profile Icon"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp" />
+
+    <!-- First Name and Last Name in a Horizontal LinearLayout -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:weightSum="2">
+
+        <!-- First Name Label and EditText -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingEnd="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="First Name"
+                android:textSize="14sp"
+                android:textColor="#333333"
+                android:layout_marginBottom="5dp"/>
+            <EditText
+                android:id="@+id/firstNameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter First Name"
+                android:enabled="false"
+                android:background="@drawable/edittext_background" />
+        </LinearLayout>
+
+        <!-- Last Name Label and EditText -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingStart="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Last Name"
+                android:textSize="14sp"
+                android:textColor="#333333"
+                android:layout_marginBottom="5dp"/>
+            <EditText
+                android:id="@+id/lastNameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Last Name"
+                android:enabled="false"
+                android:background="@drawable/edittext_background" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Email Label and EditText -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textSize="14sp"
+        android:textColor="#333333"
+        android:layout_marginBottom="5dp"/>
+    <EditText
+        android:id="@+id/emailTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Email"
+        android:enabled="false"
+        android:background="@drawable/edittext_background" />
+
+    <!-- Address Label and Input -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:textSize="14sp"
+        android:textColor="#333333"
+        android:layout_marginBottom="5dp"/>
+    <EditText
+        android:id="@+id/addressEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Address"
+        android:background="@drawable/edittext_background" />
+
+    <!-- City Label and Input -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="City"
+        android:textSize="14sp"
+        android:textColor="#333333"
+        android:layout_marginBottom="5dp"/>
+    <EditText
+        android:id="@+id/cityEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter City"
+        android:background="@drawable/edittext_background" />
+
+    <!-- Postal Code Label and Input -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Postal Code"
+        android:textSize="14sp"
+        android:textColor="#333333"
+        android:layout_marginBottom="5dp"/>
+    <EditText
+        android:id="@+id/postalCodeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Postal Code"
+        android:background="@drawable/edittext_background" />
+
+    <Button
+        android:id="@+id/updateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Profile"
+        style="@style/ButtonStyle"
+        android:layout_marginTop="16dp" />
+
+    <!-- Add Logout Button -->
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#FF5252"
+        style="@style/ButtonStyle" />
+</LinearLayout>
