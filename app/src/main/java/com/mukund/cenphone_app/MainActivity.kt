@@ -8,15 +8,19 @@ import androidx.activity.viewModels
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.systemBarsPadding
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.compose.rememberNavController
 import com.google.firebase.auth.FirebaseAuth
 import com.mukund.cenphonenew.data.firebase.FirebaseManager
 import com.mukund.cenphonenew.ui.navigation.NavGraph
 import com.mukund.cenphonenew.ui.theme.CenphoneNewTheme
+import com.mukund.cenphonenew.ui.util.PaymentHelper
 import com.mukund.cenphonenew.ui.util.ToastManager
 import com.mukund.cenphonenew.ui.viewmodel.AuthViewModel
 import com.mukund.cenphonenew.ui.viewmodel.CartViewModel
@@ -25,9 +29,16 @@ import com.mukund.cenphonenew.ui.viewmodel.OrderViewModel
 import com.mukund.cenphonenew.ui.viewmodel.PhoneViewModel
 
 class MainActivity : ComponentActivity() {
+    
+    // Initialize the PaymentHelper early in the activity lifecycle
+    lateinit var paymentHelper: PaymentHelper
+    
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
+        enableEdgeToEdge() // This enables edge-to-edge content
+        
+        // Initialize Payment Helper early in the lifecycle
+        paymentHelper = PaymentHelper.getInstance(this)
         
         // Initialize Firebase in the application context
         FirebaseManager.initialize(applicationContext)
@@ -58,11 +69,16 @@ class MainActivity : ComponentActivity() {
         setContent {
             CenphoneNewTheme {
                 Surface(
-                    modifier = Modifier.fillMaxSize(),
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .systemBarsPadding(), // Add padding for system bars (status bar/navigation bar)
                     color = MaterialTheme.colorScheme.background
                 ) {
                     // Box to hold both the NavGraph and the ToastHost
-                    Box(modifier = Modifier.fillMaxSize()) {
+                    Box(
+                        modifier = Modifier.fillMaxSize(),
+                        contentAlignment = Alignment.BottomCenter // Align toast messages at bottom
+                    ) {
                         val navController = rememberNavController()
                         
                         // ViewModels
@@ -85,7 +101,14 @@ class MainActivity : ComponentActivity() {
                         )
                         
                         // Toast manager host to display toast messages
-                        ToastManager.ToastHost()
+                        Box(
+                            modifier = Modifier
+                                .fillMaxSize()
+                                .padding(bottom = 16.dp), // Add bottom padding for toast messages
+                            contentAlignment = Alignment.BottomCenter
+                        ) {
+                            ToastManager.ToastHost()
+                        }
                     }
                 }
             }

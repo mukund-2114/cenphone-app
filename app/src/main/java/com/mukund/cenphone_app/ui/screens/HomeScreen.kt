@@ -126,15 +126,18 @@ fun HomeScreen(
             Row(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .padding(horizontal = 16.dp, vertical = 8.dp),
+                    .padding(horizontal = 16.dp, vertical = 16.dp),
                 horizontalArrangement = Arrangement.End,
                 verticalAlignment = Alignment.CenterVertically
             ) {
-                IconButton(onClick = onProfileClick) {
+                IconButton(
+                    onClick = onProfileClick,
+                    modifier = Modifier.padding(top = 8.dp)
+                ) {
                     Icon(
                         imageVector = Icons.Default.AccountCircle,
                         contentDescription = "Profile",
-                        modifier = Modifier.size(32.dp)
+                        modifier = Modifier.size(36.dp)
                     )
                 }
             }
@@ -166,9 +169,12 @@ fun HomeScreen(
             Column(
                 modifier = Modifier
                     .fillMaxSize()
-                    .padding(16.dp),
+                    .padding(horizontal = 16.dp, vertical = 24.dp),
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
+                // Add extra top space to ensure logo is visible
+                Spacer(modifier = Modifier.height(24.dp))
+                
                 // App Logo with animation at the top
                 val logoImage = ImageUtils.loadImageFromAssets(ImageUtils.getAppLogoPath())
                 AnimatedVisibility(

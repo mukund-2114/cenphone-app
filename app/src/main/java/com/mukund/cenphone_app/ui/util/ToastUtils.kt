@@ -84,8 +84,8 @@ fun CustomToast(
     Box(
         modifier = modifier
             .fillMaxWidth()
-            .padding(horizontal = 16.dp, vertical = 16.dp),
-        contentAlignment = Alignment.TopCenter
+            .padding(horizontal = 16.dp, vertical = 48.dp),
+        contentAlignment = Alignment.BottomCenter
     ) {
         AnimatedVisibility(
             visibleState = visible,
@@ -95,12 +95,12 @@ fun CustomToast(
                            dampingRatio = Spring.DampingRatioMediumBouncy,
                            stiffness = Spring.StiffnessLow
                        ),
-                       initialOffsetY = { -100 }
+                       initialOffsetY = { 200 }
                    ),
             exit = fadeOut(animationSpec = tween(500)) +
                    slideOutVertically(
                        animationSpec = tween(500),
-                       targetOffsetY = { -100 }
+                       targetOffsetY = { 200 }
                    )
         ) {
             Surface(
