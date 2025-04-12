@@ -1,4 +1,4 @@
-package com.mukund.cenphone_app.ui.theme
+package com.mukund.cenphonenew.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
